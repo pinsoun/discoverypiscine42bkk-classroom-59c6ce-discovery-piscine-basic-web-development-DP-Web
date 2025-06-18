@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#eee, #ccc);
+}
+
+.menu {
+  background-color: #b31217; /* SNCF red */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul > li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.menu li:hover > a {
+  background-color: #770c10;
+  border-radius: 5px;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e6e6e6;
+  padding: 0;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul ul li {
+  display: block;
+}
+
+.menu ul ul a {
+  color: #333;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.menu li:hover ul {
+  display: block;
+}
