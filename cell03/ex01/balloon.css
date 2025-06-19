@@ -1,0 +1,25 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the balloon on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Balloon styling */
+.balloon {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
