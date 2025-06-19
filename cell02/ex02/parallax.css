@@ -1,0 +1,65 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Parallax effect for the background */
+.parallax-background {
+  position: relative;
+  background: url('https://via.placeholder.com/1500x800') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Adjust second parallax image */
+.second-image {
+  background: url('https://via.placeholder.com/1500x800/ff5733') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Center the text */
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.message p {
+  font-size: 1.5rem;
+}
+
+/* Black block */
+.black-block {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
